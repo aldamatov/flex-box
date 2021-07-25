@@ -1,0 +1,55 @@
+p {
+  background-color: blue;
+}
+
+body {
+  font-size: 30px;
+  color: black;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: blue;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  display: flex;
+  height: 80vh;
+  /*flex-direction: row-reverse;*/
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.wrapper > div {
+  width: 80px;
+  height: 80px;
+  background: white;
+  margin: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper > div:nth-child(odd) {
+  height: 90px;
+}
+
+/* Flex Grow */
+.wrapper .item-2 {
+  background: red;
+  /* flex-grow: 3; */
+}
+
+.item-3 {
+  order: -1;
+}
+.item-4 {
+  flex-grow: 3;
+  order: -1;
+}
